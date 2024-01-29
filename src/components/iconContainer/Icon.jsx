@@ -4,10 +4,8 @@ import { useRouter } from 'next/router'
 const StyledImage = styled.div`
   background-image: url('/${props => props.image}');
   background-repeat: no-repeat;
-  box-sizing: border-box;
 
-  width: 200px;
-  height: 200px;  
+  width: 100vh;
 `
 
 const StyledIcon = styled.div`
@@ -17,13 +15,11 @@ const StyledIcon = styled.div`
 function Icon ({ image, URL }) {
   const router = useRouter()
 
-  const handleIconClick = (link, condition) => {
-    (condition === false && router.push('/'))
-    router.push(link)
+  const handleCliker = () => {
+    return URL? router.push(URL): router.push('/')
   }
-
   return (
-    <StyledIcon onClick={() => handleIconClick(URL, image)}>
+    <StyledIcon onClick={() => handleCliker()}>
       <StyledImage image={image}/>
     </StyledIcon>
   )
