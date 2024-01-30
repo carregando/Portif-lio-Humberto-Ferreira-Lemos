@@ -6,6 +6,9 @@ const StyledNavbar = styled.div`
   background-color: ${props => props.theme.colors.white};
   display: flex;
   align-items: center;
+
+  height: 80px;
+  padding: 0 40px;
 `
 
 export default function Navbar () {

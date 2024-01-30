@@ -3,8 +3,8 @@ import { useRouter } from 'next/router'
 
 const StyledImage = styled.div`
   background: url('/${props => props.image}') no-repeat center;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background-size: cover;
   cursor: pointer;
 `
