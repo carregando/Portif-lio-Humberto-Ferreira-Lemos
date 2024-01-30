@@ -7,13 +7,17 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
   margin: 0;
 }
+
+body {
+  background-color: ${props => props.theme.colors.betterWhite};
+}
 `
 
 function App ({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
-     <GlobalStyle/>
-     <Component {...pageProps} />
+      <GlobalStyle/>
+      <Component {...pageProps} />
     </ThemeProvider>
   )
 }
