@@ -4,18 +4,24 @@ import Icon from '../../iconContainer/Icon'
 
 const StyledNavbar = styled.div`
   background-color: ${props => props.theme.colors.white};
+  color: ${props => props.theme.colors.black};
   display: flex;
   align-items: center;
-
   height: 80px;
-  padding: 0 40px;
+`
+
+const IconContainer = styled.div`
+  padding: 0px 40px;
 `
 
 export default function Navbar () {
   return (
     <>
       <StyledNavbar>
-        <Icon />
+        <IconContainer>
+          <Icon/>
+        </IconContainer>
+        <h1>Humberto Ferreira Lemos</h1>
       </StyledNavbar>
     </>
   )

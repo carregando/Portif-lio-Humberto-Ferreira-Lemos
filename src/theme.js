@@ -5,6 +5,7 @@ const theme = {
     derkestBlue: '#0C0A1F',
     black: '#000000',
     gray: '#D9D9D9',
+    lightGray: '#F2F2F2',
   }
 }
 
