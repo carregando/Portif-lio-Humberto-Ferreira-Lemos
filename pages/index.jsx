@@ -1,19 +1,19 @@
 import styled from 'styled-components'
 
-import Icon from '../src/components/iconContainer/Icon'
+import Footer from '../src/components/layout/footer/Footer'
 import Navbar from '../src/components/layout/Navbar/Navbar'
 
-const TestContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+const Body = styled.div`
+  min-height: 100vh;
 `
 
 function HomePage () {
   return (
     <>
-      <TestContainer>
-        <Navbar/>
-      </TestContainer>
+      <Body>
+       <Navbar/>
+      </Body>
+      <Footer/>
     </>
   )
 }
